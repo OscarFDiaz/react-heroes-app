@@ -19,31 +19,40 @@ export const HeroPage = () => {
   return (
     <div className="row mt-5">
       <div className="col-4">
+        {/* HERO IMAGE */}
         <img
           src={`https://raw.githubusercontent.com/OscarFDiaz/react-heroes-app/gh-pages/heroes/${id}.jpg`}
           alt={hero.superhero}
-          className="img-thumbnail animate__animated animate__fadeInLeft"
+          className=" card-img animate__animated animate__fadeInLeft"
         />
       </div>
-
-      <div className="col-8">
-        <h3>{hero.superhero}</h3>
+      {/* HERO DATA */}
+      <div className="heroData__page col-8 position-relative">
+        <h3 className="mb-4">{hero.superhero}</h3>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item">
-            <b>Alter ego:</b> {hero.alter_ego}
+          <li className="list-group-item list-group-item-dark">
+            <b>Alter ego:</b>
+            <br />
+            {hero.alter_ego}
           </li>
-          <li className="list-group-item">
-            <b>Publisher</b> {hero.publisher}
+          <li className="list-group-item list-group-item-dark">
+            <b>Publisher</b>
+            <br /> {hero.publisher}
           </li>
-          <li className="list-group-item">
-            <b>First appearance</b> {hero.first_appearance}
+          <li className="list-group-item list-group-item-dark">
+            <b>First appearance</b>
+            <br /> {hero.first_appearance}
           </li>
         </ul>
 
         <h5 className="mt-3">Characters</h5>
         <p>{hero.characters}</p>
 
-        <button className="btn btn-outline-primary" onClick={onNavigateBack}>
+        <button
+          style={{ marginBottom: 16 }}
+          className="btn btn-light position-absolute bottom-0"
+          onClick={onNavigateBack}
+        >
           Regresar
         </button>
       </div>
