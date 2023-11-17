@@ -2,6 +2,8 @@
 
 📝 Aplicación creada usando <b>Vite + React, Bootstrap, RouterDOM, animateCSS</b>.
 
+![Image mockup](https://github.com/OscarFDiaz/react-heroes-app/assets/9502714/9fcff69d-3469-4001-bd48-9511bbd1eb17)
+
 📝 Esta aplicación fue creada siguiendo el curso de Fernando Herrera: [React: De cero a experto (Hooks y MERN)](https://www.udemy.com/course/react-cero-experto/)
 
 ---
